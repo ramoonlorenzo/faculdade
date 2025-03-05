@@ -3,7 +3,8 @@
 > - "Instruções que, quando executadas fornecem características, funções e desempenho desejados."
 > - "Estruturas de dados que possibilitam aos programas manipular informações adequadamente."
 > - "Informação descritiva, tanto na forma impressa quanto na virtual, descrevendo a operação e o uso dos programas."
->   _PRESSMAN 9ª (Edição 2021)_
+
+_PRESSMAN 9ª (Edição 2021)_
 
 # Domínios da Aplicação
 
@@ -68,10 +69,12 @@
 # Engenharia de Software
 
 > - "A aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software; isto é, a aplicação de engenharia ao software"
->   _IEEE17 - Instituto de Engenheiros Eletricistas e Eletrônicos_
+
+_IEEE17 - Instituto de Engenheiros Eletricistas e Eletrônicos_
 
 # Natureza de Software
 
 > - "O software tem um duplo papel. Ele é um produto e o veículo para distribuir um produto."
 > - "O software distribui o produto mais importante de nossa era — a informação."
->   _PRESSMAN 9ª (Edição 2021)_
+
+_PRESSMAN 9ª (Edição 2021)_
