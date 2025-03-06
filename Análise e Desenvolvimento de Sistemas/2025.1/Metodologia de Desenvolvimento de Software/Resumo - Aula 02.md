@@ -51,8 +51,6 @@ Fornecem suporte para o processo e para os métodos.
 
 # O Processo do Software
 
-## O Processo
-
 - Não é uma prescrição rígida de como desenvolver um software
 - É uma abordagem adaptável que possibilita às pessoas realizarem o trabalho de selecionar e escolher o conjunto apropriado de ações e tarefas
 - A intenção é a de sempre entregar o software dentro do prazo e com qualidade suficiente para satisfazer aqueles que patrocinaram sua criação e aqueles que vão utilizá-lo
