@@ -4,11 +4,11 @@
 
 - Foram desenvolvidas devido às aplicações empresariais para microcomputadores.
 
-- Os microcomputadores não eram conectados da mesma maneira que os ==thin clients== no ==mainframe==, não havendo uma maneira eficiente de compartilhar dados entre eles.
+- Os microcomputadores não eram conectados da mesma maneira que os **thin clients** no **mainframe**, não havendo uma maneira eficiente de compartilhar dados entre eles.
 
 > As companhias investiram em computadores como dispositivos autônomos que às vezes vinham acompanhados de impressoras. Quando os empregados que não tinham impressoras queriam imprimir documentos, tinham que copiar seus arquivos em disquetes, levá-los até seu colega de trabalho e carregá-lo no seu PC e então fazer a impressão a partir daquele PC. Esta versão bastante rústica de rede tornou-se conhecida como **Sneakernet**.
 
-O compartilhamento de dados usando ==disquetes== não era uma maneira eficiente e econômica de se administrar empresas:
+O compartilhamento de dados usando **disquetes** não era uma maneira eficiente e econômica de se administrar empresas:
 
 - Como evitar a duplicação de equipamentos e recursos?
 - Como se comunicar eficazmente?
@@ -52,7 +52,7 @@ A solução foi a criação de outros tipos de redes.
 | MAN / WMAN | Metropolitan Area Network |       10 km       |        Cidade         | São redes que ocupam o perímetro de um bairro ou uma cidade. Permitem que empresas com filiais em bairros diferentes se comuniquem.                                                                                                                                                                                                                                                   |
 | WAN / WWAN |     Wide Area Network     |  100 km, 1000 km  |  País ou Continente   | São redes usadas para fazer o compartilhamento de recursos para usuários que estão geograficamente distribuídos. São redes com um custo elevado, pois utilizam circuitos para satélites e enlaces de micro-ondas.                                                                                                                                                                     |
 
-**Nota:** A letra "W" no início representa a palavra **Wireless**, indicando que se trata de redes sem fio.
+**Nota:** A letra "**W**" no início representa a palavra **Wireless**, indicando que se trata de redes sem fio.
 
 ---
 
