@@ -6,6 +6,8 @@
 
 _PRESSMAN 9ª (Edição 2021)_
 
+---
+
 # Domínios da Aplicação
 
 ## 1. Software de Sistema
@@ -66,11 +68,15 @@ _PRESSMAN 9ª (Edição 2021)_
 | Aprendizado de Máquina                   |  (...)   |
 | Prova de teoremas e jogos                |  (...)   |
 
+---
+
 # Engenharia de Software
 
-> - "A aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software; isto é, a aplicação de engenharia ao software"
+> - "A aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software; isto é, a aplicação de engenharia ao software."
 
 _IEEE17 - Instituto de Engenheiros Eletricistas e Eletrônicos_
+
+---
 
 # Natureza de Software
 
