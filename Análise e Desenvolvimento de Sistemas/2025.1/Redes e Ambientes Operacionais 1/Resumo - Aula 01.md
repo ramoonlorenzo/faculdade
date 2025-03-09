@@ -34,7 +34,7 @@ Era necessário um modo de mover informações de maneira rápida e eficiente, n
 
 A solução foi a criação de outros tipos de redes.
 
-## Classificação das redes quanto à extensão geográfica
+## Classificação das Redes
 
 |   Sigla    |           Nome            |     Distância     |       Contexto        | Descrição                                                                                                                                                                                                                                                                                                                                                                             |
 | :--------: | :-----------------------: | :---------------: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -67,7 +67,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 ## Tipos de Comunicação
 
-### Comunicação Ponto-a-Ponto
+### Ponto-a-Ponto
 
 - Os hosts interconectados agem como **parceiros iguais**, ou pares.
 
@@ -77,7 +77,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 ![Exemplo de Comunicação Ponto-a-Ponto](./Recursos/ponto-a-ponto.png)
 
-### Vantagens (Comunicação Ponto-a-Ponto)
+#### Vantagens
 
 - Mais **econômico** para implementar;
 
@@ -85,7 +85,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 - Não exige um administrador **dedicado** de redes.
 
-### Desvantagens (Comunicação Ponto-a-Ponto)
+#### Desvantagens
 
 - **Não se adapta bem ao crescimento** de grandes redes e a administração se torna mais difícil de ser gerenciada;
 
@@ -95,7 +95,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 - Todas as máquinas que compartilham os recursos tem o **desempenho** afetado de maneira negativa.
 
-### Comunicação Cliente/Servidor
+### Cliente/Servidor
 
 - Os serviços de redes estão localizados em um computador dedicado denominado **servidor**.
 
@@ -105,7 +105,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 ![Exemplo de Comunicação Cliente/Servidor](./Recursos/cliente-servidor.png)
 
-### Vantagens (Comunicação Cliente/Servidor)
+#### Vantagens
 
 - Oferece **maior segurança**;
 
@@ -113,7 +113,7 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 - Pode-se fazer **backup dos dados em um local central**.
 
-### Desvantagens (Comunicação Cliente/Servidor)
+#### Desvantagens
 
 Exige **software especializado muito caro** para a operação de a administração de redes;
 
@@ -122,5 +122,43 @@ Exige **hardware mais caro** e muito mais potente para a máquina do servidor;
 Requer um **administrador profissional**;
 
 Possui um único ponto de falha. Se o servidor estiver inativo, os dados do usuário não estarão disponíveis.
+
+---
+
+# História das Redes
+
+Em linhas gerais, podemos analisar a história das redes de computadores à partir da seguinte linha do tempo:
+
+![Linha do tempo das redes](./Recursos/historia-redes.png)
+
+**Comutação de Pacotes:** Desenvolvida no início dos anos 1960, foi projetada para substituir a comutação de circuitos. Nessa época, a comunicação ponto a ponto e era muito ineficiente e era necessário estabelecer conexões para todos os pontos envolvidos. A comutação de pacotes eliminou essa complexidade.
+
+**ARPANET:** Foi desenvolvida no final dos anos 1970 pela ARPA (Agência de Pesquisa Militar dos Estados Unidos), através de uma colaboração entre computadores de pesquisa militares e universitários. Esse projeto cresceu para centenas de computadores no início dos anos 80 e forneceu o modelo básico para a Internet que usamos hoje.
+
+**TCP/IP:** Desenvolvido por 2 cientistas (Robert Kahn e Vint Cerf), usa uma estrutura em camadas lógicas que suportam diferentes meios de transmissão e aplicativos. Tornou-se um padrão de domínio público, sendo a base da comunicação da internet hoje.
+
+**World Wide Web:** Tim Berners-Lee inventou a **"WWW"** no período de 1989 a 1990. Também desenvolveu o primeiro servidor da WEB em 1993. O código do projeto foi aberto para a comunidade pública, fornecendo a base para o crescimento dessa tecnologia.
+
+**Internet Comercial:** O desenvolvimento de tecnologias, desde a década de 1960, tornaram as redes como conhecemos hoje.
+
+---
+
+# Arquitetura da Internet
+
+- Redes orientadas à conexão de **comutação de circuito**.
+
+![Exemplo de Comutação de Circuito](./Recursos/comutacao-de-circuito.png)
+
+> Apesar de existirem muitos circuitos, eles são finitos. Durante período de pico, algumas chamadas podem ser negadas.
+
+- **Entrega de pacotes** em uma rede de dados
+
+![Exemplo de Entrega de Pacotes](./Recursos/entrega-de-pacotes.png)
+
+> Durante os períodos de pico, a comunicação pode ser atrasada.
+
+**Exemplo:**
+
+![Mapa do início da ARPANET](./Recursos/arpanet-map.png)
 
 ---
