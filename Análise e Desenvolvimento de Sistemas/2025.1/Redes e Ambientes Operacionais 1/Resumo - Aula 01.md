@@ -26,13 +26,9 @@ No início dos anos 80, as tecnologias de rede que surgiram tinham sido criadas 
 
 **Exemplo: Topografia Estrela**
 
-À medida que o uso do computador nas empresas cresceu, logo percebeu-se que as **LANs** não eram mais suficientes.
-
-Era necessário um modo de mover informações de maneira rápida e eficiente, não só dentro da empresa, mas também de uma empresa para outra.
+À medida que o uso do computador nas empresas cresceu, logo percebeu-se que as **LANs** não eram mais suficientes. Era necessário um modo de mover informações de maneira rápida e eficiente, não só dentro da empresa, mas também de uma empresa para outra. A solução foi a criação de outros tipos de redes.
 
 ![Redes entre empresas](./Recursos/rede-empresas.png)
-
-A solução foi a criação de outros tipos de redes.
 
 ## Classificação das Redes
 
@@ -49,21 +45,9 @@ A solução foi a criação de outros tipos de redes.
 
 # Conectividade
 
-A **placa de rede**, é um dispositivo de hardware responsável pela comunicação entre um computador e uma rede.
+A **placa de rede**, é um dispositivo de hardware responsável pela comunicação entre um computador e uma rede. Essa placa é o hardware que permite aos computadores conversarem entre si através da rede e sua função é **controlar todo o envio e recebimento de dados** através da rede. Cada arquitetura de rede exige um **tipo específico de placa**.
 
-Essa placa é o hardware que permite aos computadores conversarem entre si através da rede e sua função é **controlar todo o envio e recebimento de dados** através da rede.
-
-Cada arquitetura de rede exige um **tipo específico de placa**.
-
-Com a utilização das tecnologias de **redes locais** e **WAN**, vários computadores são interligados para oferecer serviços aos seus usuários.
-
-Para realizar isso, os computadores interligados assumem **diferentes papéis ou funções em relação aos outros**.
-
-**Independente do tipo de aplicação utilizada na rede**, 2 computadores tipicamente se comunicam usando protocolos de pedido/resposta (request/response).
-
-Um computador emite um **pedido** para um serviço e o segundo computador recebe e **responde** àquele pedido.
-
-O requisitante assume o papel de um **cliente** e o que responde assume o papel de um **servidor**.
+Com a utilização das tecnologias de **redes locais** e **WAN**, vários computadores são interligados para oferecer serviços aos seus usuários. Para realizar isso, os computadores interligados assumem **diferentes papéis ou funções em relação aos outros**. E **independente do tipo de aplicação utilizada na rede**, 2 computadores tipicamente se comunicam usando protocolos de pedido/resposta (request/response). Um computador emite um **pedido** para um serviço e o segundo computador recebe e **responde** àquele pedido. O requisitante assume o papel de um **cliente** e o que responde assume o papel de um **servidor**.
 
 ## Tipos de Comunicação
 
@@ -115,13 +99,13 @@ O requisitante assume o papel de um **cliente** e o que responde assume o papel 
 
 #### Desvantagens
 
-Exige **software especializado muito caro** para a operação de a administração de redes;
+- Exige **software especializado muito caro** para a operação de a administração de redes;
 
-Exige **hardware mais caro** e muito mais potente para a máquina do servidor;
+- Exige **hardware mais caro** e muito mais potente para a máquina do servidor;
 
-Requer um **administrador profissional**;
+- Requer um **administrador profissional**;
 
-Possui um único ponto de falha. Se o servidor estiver inativo, os dados do usuário não estarão disponíveis.
+- Possui um único ponto de falha. Se o servidor estiver inativo, os dados do usuário não estarão disponíveis.
 
 ---
 
@@ -160,5 +144,27 @@ Em linhas gerais, podemos analisar a história das redes de computadores à part
 **Exemplo:**
 
 ![Mapa do início da ARPANET](./Recursos/arpanet-map.png)
+
+---
+
+# Componentes de Rede
+
+Por padrão, existem símbolos para representar os componentes de rede, podendo ser divididos em duas classificações.
+
+## Dispositivos Finais
+
+Formam a interface entre os usuários e a rede de comunicação.
+
+**Exemplo:**
+
+![Exemplos de Dispositivos Finais](./Recursos/dispositivos-finais.png)
+
+## Dispositivos intermediários
+
+Conectam os hosts individuais à rede e podem conectar várias redes individuais para formar uma rede interconectada.
+
+**Exemplo:**
+
+![Exemplos de Dispositivos Intermediários](./Recursos/dispositivos-intermediarios.png)
 
 ---
