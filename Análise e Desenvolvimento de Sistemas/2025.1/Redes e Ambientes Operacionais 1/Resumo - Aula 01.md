@@ -151,7 +151,7 @@ Em linhas gerais, podemos analisar a história das redes de computadores à part
 
 Por padrão, existem símbolos para representar os componentes de rede, podendo ser divididos em duas classificações.
 
-## Dispositivos Finais
+### Dispositivos Finais
 
 Formam a interface entre os usuários e a rede de comunicação.
 
@@ -159,12 +159,46 @@ Formam a interface entre os usuários e a rede de comunicação.
 
 ![Exemplos de Dispositivos Finais](./Recursos/dispositivos-finais.png)
 
-## Dispositivos intermediários
+### Dispositivos intermediários
 
 Conectam os hosts individuais à rede e podem conectar várias redes individuais para formar uma rede interconectada.
 
 **Exemplo:**
 
 ![Exemplos de Dispositivos Intermediários](./Recursos/dispositivos-intermediarios.png)
+
+---
+
+# Dispositivos de Rede
+
+## Repetidor
+
+Regeneram os sinais que foram distorcidos por perdas na transmissão devido à atenuação. Não realizam decisões inteligentes sobre o encaminhamento de pacotes como um roteador ou bridge.
+
+![Exemplo Gráfico de um Repetidor](./Recursos/repetidor.png)
+
+## Hub
+
+Concentram conexões, de modo passivo, sem qualquer outro efeito na transmissão dos dados. Os hubs ativos não só concentram hosts, como também regeneram sinais.
+
+![Exemplo Gráfico de um Hub](./Recursos/hub.png)
+
+## Bridge
+
+Proporcionam conexões entre redes locais, como também verificam os dados para determinar se devem ou não cruzar a bridge. Isto faz com que cada parte da rede seja mais eficiente.
+
+![Exemplo Gráfico de uma Bridge](./Recursos/bridge.png)
+
+## Switch
+
+Determinam se os dados devem ou não permanecer em uma rede local, mas como também podem transferir os dados somente para a conexão que necessita daqueles dados. Os switches adicionam mais inteligência ao gerenciamento da transferência de dados.
+
+![Exemplo Gráfico de um Switch](./Recursos/switch.png)
+
+## Roteador
+
+Os roteadores podem regenerar sinais, concentrar conexões múltiplas, e gerenciar as transferências de dados. Eles também podem ser conectados a uma WAN, que lhes permite conectar redes locais que estão separadas por longas distâncias. Nenhum outro dispositivo pode prover este tipo de conexão.
+
+![Exemplo Gráfico de um Roteador](./Recursos/roteador.png)
 
 ---
