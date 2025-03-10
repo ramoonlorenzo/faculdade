@@ -115,15 +115,25 @@ Em linhas gerais, podemos analisar a história das redes de computadores à part
 
 ![Linha do tempo das redes](./Recursos/historia-redes.png)
 
-**Comutação de Pacotes:** Desenvolvida no início dos anos 1960, foi projetada para substituir a comutação de circuitos. Nessa época, a comunicação ponto a ponto e era muito ineficiente e era necessário estabelecer conexões para todos os pontos envolvidos. A comutação de pacotes eliminou essa complexidade.
+## Comutação de Pacotes
 
-**ARPANET:** Foi desenvolvida no final dos anos 1970 pela ARPA (Agência de Pesquisa Militar dos Estados Unidos), através de uma colaboração entre computadores de pesquisa militares e universitários. Esse projeto cresceu para centenas de computadores no início dos anos 80 e forneceu o modelo básico para a Internet que usamos hoje.
+Desenvolvida no início dos anos 1960, foi projetada para substituir a comutação de circuitos. Nessa época, a comunicação ponto a ponto e era muito ineficiente e era necessário estabelecer conexões para todos os pontos envolvidos. A comutação de pacotes eliminou essa complexidade.
 
-**TCP/IP:** Desenvolvido por 2 cientistas (Robert Kahn e Vint Cerf), usa uma estrutura em camadas lógicas que suportam diferentes meios de transmissão e aplicativos. Tornou-se um padrão de domínio público, sendo a base da comunicação da internet hoje.
+## ARPANET
 
-**World Wide Web:** Tim Berners-Lee inventou a **"WWW"** no período de 1989 a 1990. Também desenvolveu o primeiro servidor da WEB em 1993. O código do projeto foi aberto para a comunidade pública, fornecendo a base para o crescimento dessa tecnologia.
+Foi desenvolvida no final dos anos 1970 pela ARPA (Agência de Pesquisa Militar dos Estados Unidos), através de uma colaboração entre computadores de pesquisa militares e universitários. Esse projeto cresceu para centenas de computadores no início dos anos 80 e forneceu o modelo básico para a Internet que usamos hoje.
 
-**Internet Comercial:** O desenvolvimento de tecnologias, desde a década de 1960, tornaram as redes como conhecemos hoje.
+## TCP/IP
+
+Desenvolvido por 2 cientistas (Robert Kahn e Vint Cerf), usa uma estrutura em camadas lógicas que suportam diferentes meios de transmissão e aplicativos. Tornou-se um padrão de domínio público, sendo a base da comunicação da internet hoje.
+
+## World Wide Web
+
+Tim Berners-Lee inventou a **"WWW"** no período de 1989 a 1990. Também desenvolveu o primeiro servidor da WEB em 1993. O código do projeto foi aberto para a comunidade pública, fornecendo a base para o crescimento dessa tecnologia.
+
+## Internet Comercial
+
+O desenvolvimento de tecnologias, desde a década de 1960, tornaram as redes como conhecemos hoje.
 
 ---
 
@@ -151,7 +161,7 @@ Em linhas gerais, podemos analisar a história das redes de computadores à part
 
 Por padrão, existem símbolos para representar os componentes de rede, podendo ser divididos em duas classificações.
 
-### Dispositivos Finais
+## Dispositivos Finais
 
 Formam a interface entre os usuários e a rede de comunicação.
 
@@ -159,7 +169,7 @@ Formam a interface entre os usuários e a rede de comunicação.
 
 ![Exemplos de Dispositivos Finais](./Recursos/dispositivos-finais.png)
 
-### Dispositivos intermediários
+## Dispositivos intermediários
 
 Conectam os hosts individuais à rede e podem conectar várias redes individuais para formar uma rede interconectada.
 
@@ -207,27 +217,78 @@ Os roteadores podem regenerar sinais, concentrar conexões múltiplas, e gerenci
 
 ## Topologias Físicas
 
-- **Barramento (Bus):** Usa um único cabo backbone que é terminado em ambas as extremidades. Todos os hosts são diretamente conectados a este backbone.
+### Barramento (Bus)
 
-- **Anel (Ring):** Conecta um host ao próximo e o último host ao primeiro. Isto cria um anel físico utilizando o cabo.
+Usa um único cabo backbone que é terminado em ambas as extremidades. Todos os hosts são diretamente conectados a este backbone.
 
-- **Estrela (Star):** Conecta todos os cabos a um ponto central de concentração.
+### Anel (Ring)
 
-- **Estrela estendida (Extended Star):** Une estrelas individuais ao conectar os hubs ou switches. Esta topologia pode estender o escopo e a cobertura da rede.
+Conecta um host ao próximo e o último host ao primeiro. Isto cria um anel físico utilizando o cabo.
 
-- **Hierárquica:** Semelhante a uma estrela estendida. Porém, ao invés de unir os hubs ou switches, o sistema é vinculado a um computador que controla o tráfego na topologia.
+### Estrela (Star)
 
-- **Malha (Mesh):** É implementada para prover a maior proteção possível contra interrupções de serviço, Cada host tem suas próprias conexões com todos os outros hosts. Apesar da Internet ter vários caminhos para qualquer local, ela não adota a topologia em malha completa.
+Conecta todos os cabos a um ponto central de concentração.
+
+### Estrela estendida (Extended Star)
+
+Une estrelas individuais ao conectar os hubs ou switches. Esta topologia pode estender o escopo e a cobertura da rede.
+
+### Hierárquica
+
+Semelhante a uma estrela estendida. Porém, ao invés de unir os hubs ou switches, o sistema é vinculado a um computador que controla o tráfego na topologia.
+
+### Malha (Mesh)
+
+É implementada para prover a maior proteção possível contra interrupções de serviço, Cada host tem suas próprias conexões com todos os outros hosts. Apesar da Internet ter vários caminhos para qualquer local, ela não adota a topologia em malha completa.
 
 ![Gráfico das Topologias Físicas](./Recursos/topologias-fisicas.png)
 
 ## Topologias Lógicas
 
-- **Broadcast:** Significa que cada host envia seus dados a todos os outros hosts conectados ao meio físico da rede. Não existe uma ordem que deve ser seguida pelas estações para usar a rede. A ordem é: primeiro a chegar, primeiro a usar.
+### Broadcast
 
-- **Passagem de token:** Controla o acesso à rede, passando um token eletrônico sequencialmente para cada host. Quando um host recebe o token, significa que esse host pode enviar dados na rede. Se o host não tiver dados a serem enviados, ele vai passar o token para o próximo host e o processo será repetido.
-  - **Ex:** Token Ring e Fiber Distributed Data Interface (FDDI). Uma variação do Token Ring e FDDI é Arcnet. Arcnet é passagem de token em uma topologia de barramento.
+Significa que cada host envia seus dados a todos os outros hosts conectados ao meio físico da rede. Não existe uma ordem que deve ser seguida pelas estações para usar a rede. A ordem é: primeiro a chegar, primeiro a usar.
+
+### Passagem de token
+
+Controla o acesso à rede, passando um token eletrônico sequencialmente para cada host. Quando um host recebe o token, significa que esse host pode enviar dados na rede. Se o host não tiver dados a serem enviados, ele vai passar o token para o próximo host e o processo será repetido.
+
+**Exemplo:** Token Ring e Fiber Distributed Data Interface (FDDI). Uma variação do Token Ring e FDDI é Arcnet. Arcnet é passagem de token em uma topologia de barramento.
 
 ![Gráfico de Topologias na Prática](./Recursos/topologias-na-pratica.png)
+
+---
+
+# Protocolos de Rede
+
+- Conjuntos de protocolos (**protocol suites**) são coleções de protocolos que permitem a comunicação de um host para outro através da rede.
+
+- **Um protocolo** é uma descrição formal de um conjunto de regras e convenções que governam a maneira de comunicação entre os dispositivos em uma rede.
+
+- **Os protocolos determinam** o formato, temporização, sequência, e controle de erros na comunicação de dados.
+
+- **Sem os protocolos**, o computador não pode criar ou reconstruir o fluxo de bits recebido de outro computador no seu formato original.
+
+![Gráfico de um Protocolo de Rede](./Recursos/protocolos-de-rede.png)
+
+### Exemplos de Protocolos
+
+- SMTP
+- HTTP/HTTPS
+- SNMP
+- CSMA/CD
+- IP
+- IPV6
+- ICMP
+- ARP
+- RARP
+- TCP
+- UDP
+- X.25
+- Frame-Relay
+- ATM
+- PPP
+- HDLC
+- MPLS
 
 ---
