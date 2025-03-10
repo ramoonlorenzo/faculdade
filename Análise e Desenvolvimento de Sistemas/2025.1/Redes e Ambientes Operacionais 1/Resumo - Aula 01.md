@@ -292,3 +292,59 @@ Controla o acesso à rede, passando um token eletrônico sequencialmente para ca
 - MPLS
 
 ---
+
+# Largura de Banda
+
+Largura de banda é definida como a quantidade de informações que flui, através da conexão de rede, durante de um certo período de tempo.
+
+Por que a largura de banda é importante?
+
+**1. A largura de banda é finita:** Independentemente dos meios usados para criar a rede, existem limites na capacidade daquela rede de transportar informações. A largura de banda é limitada por leis da física e pelas tecnologias usadas para colocar as informações nos meios físicos. Ex: DSL, Fibra, etc.
+**2. Largura de banda não é grátis:** É possível comprar equipamentos para uma rede local que lhe oferecerá uma largura de banda quase ilimitada durante um longo período de tempo. Para as conexões WAN, é quase sempre necessário comprar largura de banda de um provedor de serviços.
+**3. A demanda por largura de banda está sempre crescendo:** A transmissão, através da rede, de conteúdo rico em mídia, inclusive vídeo e áudio streaming, exige quantidades enormes de largura de banda.
+**4. A largura de banda é um fator importante na análise do desempenho da rede, na criação de novas redes, e no entendimento da Intemet:** As informações fluem como uma sequência de bits de computador a computador por todo o mundo.
+
+Exemplos de como podemos imaginar a Largura de Banda:
+
+![Exemplo Gráfico das Larguras de Banda 1](./Recursos/largura-de-banda1.png)
+
+![Exemplo Gráfico das Larguras de Banda 2](./Recursos/largura-de-banda2.png)
+
+## Medição
+
+- A unidade básica de largura de banda é **bits por segundo (bps)**.
+
+- É a medida da quantidade de informações que pode ser transferida de um lugar para o outro em um determinado período de tempo, ou segundos.
+
+![Gráfico com as Unidades de Bits por segundo](./Recursos/medicoes.png)
+
+> Largura de banda e velocidade não são sinônimos. Numa determinada conexão, apenas uma pequena quantidade da sua capacidade de transmitir dados pode estar sendo usadas.
+
+## Limitações
+
+- A largura de banda varia dependendo do **tipo dos meios físicos** assim como das tecnologias de rede local e WAN utilizadas.
+
+- **As diferenças físicas** na maneira com que os sinais são transmitidos (fio de cobre de par trançado, de cabo coaxial, de fibra óptica e do ar) resultam em limitações fundamentais na capacidade de transporte de informações de um determinado meio.
+
+- Porém, **a largura de banda real de uma rede** é determinada pela combinação de meios físicos e das tecnologias escolhidas para a sinalização e a detecção de sinais de rede.
+
+> A largura de banda real é determinada pelos métodos de sinalização, placas de rede (NICs), e outros itens de equipamento de rede escolhidos. Consequentemente, a largura de banda não é somente determinada pelas limitações dos meios físicos.
+
+## Throughput
+
+- **Largura de banda** é a medição da quantidade de informações que podem ser transferidas através da rede em certo período de tempo.
+
+- **Throughput** se refere à largura de banda real medida, em uma hora do dia específica, usando rotas específicas de Internet, durante a transmissão de um conjunto específico de dados na rede.
+  - **Alguns dos fatores que determinam o throughput:** Dispositivos de interconexão; Tipos de dados sendo transferidos; Topologias de rede; Número de usuários na rede; Computador do usuário; Computador servidor; Condições de energia.
+
+![Throughput](./Recursos/throughput.png)
+
+> Por muitas razões, o throughput é muito menor que largura de banda digital máxima, possível do meio, que está sendo usado.
+
+## Latência
+
+A latência (delay) é o atraso entre o tempo que o quadro primeiro começa a sair do dispositivo de origem e o tempo que a primeira parte do quadro chega ao seu destino.
+
+- Atraso devido a velocidade de propagação do sinal no meio;
+- Atraso devido a tomada de decisões de encaminhamento (software/hardware);
+- Atraso devido a circuitos elétricos.
