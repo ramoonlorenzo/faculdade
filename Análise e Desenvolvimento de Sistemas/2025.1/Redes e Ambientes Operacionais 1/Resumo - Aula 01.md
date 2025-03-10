@@ -202,3 +202,32 @@ Os roteadores podem regenerar sinais, concentrar conexões múltiplas, e gerenci
 ![Exemplo Gráfico de um Roteador](./Recursos/roteador.png)
 
 ---
+
+# Topologias de Rede
+
+## Topologias Físicas
+
+- **Barramento (Bus):** Usa um único cabo backbone que é terminado em ambas as extremidades. Todos os hosts são diretamente conectados a este backbone.
+
+- **Anel (Ring):** Conecta um host ao próximo e o último host ao primeiro. Isto cria um anel físico utilizando o cabo.
+
+- **Estrela (Star):** Conecta todos os cabos a um ponto central de concentração.
+
+- **Estrela estendida (Extended Star):** Une estrelas individuais ao conectar os hubs ou switches. Esta topologia pode estender o escopo e a cobertura da rede.
+
+- **Hierárquica:** Semelhante a uma estrela estendida. Porém, ao invés de unir os hubs ou switches, o sistema é vinculado a um computador que controla o tráfego na topologia.
+
+- **Malha (Mesh):** É implementada para prover a maior proteção possível contra interrupções de serviço, Cada host tem suas próprias conexões com todos os outros hosts. Apesar da Internet ter vários caminhos para qualquer local, ela não adota a topologia em malha completa.
+
+![Gráfico das Topologias Físicas](./Recursos/topologias-fisicas.png)
+
+## Topologias Lógicas
+
+- **Broadcast:** Significa que cada host envia seus dados a todos os outros hosts conectados ao meio físico da rede. Não existe uma ordem que deve ser seguida pelas estações para usar a rede. A ordem é: primeiro a chegar, primeiro a usar.
+
+- **Passagem de token:** Controla o acesso à rede, passando um token eletrônico sequencialmente para cada host. Quando um host recebe o token, significa que esse host pode enviar dados na rede. Se o host não tiver dados a serem enviados, ele vai passar o token para o próximo host e o processo será repetido.
+  - **Ex:** Token Ring e Fiber Distributed Data Interface (FDDI). Uma variação do Token Ring e FDDI é Arcnet. Arcnet é passagem de token em uma topologia de barramento.
+
+![Gráfico de Topologias na Prática](./Recursos/topologias-na-pratica.png)
+
+---
