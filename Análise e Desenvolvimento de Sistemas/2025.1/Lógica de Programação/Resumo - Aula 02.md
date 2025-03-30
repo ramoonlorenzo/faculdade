@@ -2,8 +2,6 @@
 
 Operações básicas com **números inteiros (int)** e **números de ponto flutuante (float)**.
 
-**Exemplos:**
-
 ## Sem biblioteca
 
 ### Soma
@@ -134,6 +132,215 @@ print(f"Fatorial de 5 = {fatorial}") # 120
 ```python
 print(f"Valor de pi: {math.pi}") # 3.141592653589793
 print(f"Valor de e: {math.e}") # 2.718281828459045
+```
+
+---
+
+# Operações com Strings
+
+O que é uma string? Uma string é uma **sequência de caracteres, como palavras, frases ou textos**. Em Python, strings são definidas usando **aspas simples ('')** ou **aspas duplas ("")**.
+
+## Básico
+
+### Criação de Strings
+
+```python
+nome = "Alice"
+sobrenome = 'Silva'
+frase = "Python é incrível!"
+```
+
+### Exibindo Strings
+
+```python
+print("Nome:", nome) # Nome: Alice
+print("Sobrenome:", sobrenome) # Sobrenome: Silva
+print("Frase:", frase) # Frase: Python é incrível!
+```
+
+### Concatenação de Strings
+
+"Concatenação" é a junção de duas ou mais strings.
+
+```python
+nome = "Alice"
+sobrenome = "Silva"
+nome_completo = nome + " " + sobrenome
+print("Nome completo:", nome_completo) # Nome completo: Alice Silva
+```
+
+### Repetição de Strings
+
+Você pode repetir uma string usando o operador de multiplicação.
+
+```python
+risada = "HA"
+risada_repetida = risada * 3
+print("Risada repetida:", risada_repetida) # Risada repetida: HAHAHA
+```
+
+### Acessando Caracteres de uma String
+
+Em Python, strings são indexadas, o que significa que você pode acessar caracteres individuais usando índices.
+
+```python
+nome = "Alice"
+primeiro_caractere = nome[0]
+ultimo_caractere = nome[-1]
+print("Primeiro caractere de 'Alice':", primeiro_caractere) # Primeiro caractere de 'Alice': A
+print("Último caractere de 'Alice':", ultimo_caractere) # Último caractere de 'Alice': e
+```
+
+### Fatiamento de Strings (Slicing)
+
+Você pode extrair partes de uma string usando o fatiamento.
+
+```python
+frase = "Python é incrível!"
+parte_da_frase = frase[0:6] # Extrai os caracteres do índice 0 ao 5
+print("Parte da frase:", parte_da_frase) # Parte da frase: Python
+```
+
+### Comprimento de uma String
+
+Use a função **len()** para obter o número de caracteres em uma string.
+
+```python
+nome = "Alice"
+tamanho_nome = len(nome)
+print("Tamanho do nome 'Alice':", tamanho_nome) # Tamanho do nome 'Alice': 5
+```
+
+## Métodos de Strings
+
+Strings em Python têm vários métodos úteis para manipulação.
+
+### 1. lower() e upper(): Convertem a string para minúsculas ou maiúsculas.
+
+```python
+nome = "Alice"
+minusculas = nome.lower()
+maiusculas = nome.upper()
+print("Nome em minúsculas:", minusculas) # Nome em minúsculas: alice
+print("Nome em maiúsculas:", maiusculas) # Nome em maiúsculas: ALICE
+```
+
+### 2. strip(): Remove espaços em branco no início e no final da string.
+
+```python
+texto_com_espacos = " Olá, mundo! "
+texto_sem_espacos = texto_com_espacos.strip()
+print("Texto sem espaços:", texto_sem_espacos) # Texto sem espaços: Olá, mundo!
+```
+
+### 3. replace(): Substitui uma parte da string por outra.
+
+```python
+frase = "Python é incrível!"
+nova_frase = frase.replace("incrível", "fantástico")
+print("Frase modificada:", nova_frase) # Frase modificada: Python é fantástico!
+```
+
+### 4. split(): Divide a string em uma lista de substrings com base em um separador.
+
+```python
+frase = "Python é incrível!"
+palavras = frase.split(" ")
+print("Palavras da frase:", palavras) # Palavras da frase: ['Python', 'é', 'incrível!']
+```
+
+### 5. join(): Junta elementos de uma lista em uma única string, usando um separador.
+
+```python
+palavras = ["Python", "é", "incrível!"]
+frase_reunida = " ".join(palavras)
+print("Frase reunida:", frase_reunida) # Frase reunida: Python é incrível!
+```
+
+### 6. find(): Procura por uma substring e retorna o índice da primeira ocorrência.
+
+```python
+frase = "Python é incrível!"
+indice = frase.find("incrível")
+print("Índice de 'incrível':", indice) # Índice de 'incrível': 9
+```
+
+### 7. count(): Conta quantas vezes uma substring aparece na string.
+
+```python
+frase = "Python é incrível!"
+contagem = frase.count("é")
+print("Quantidade de 'é' na frase:", contagem) # Quantidade de 'é' na frase: 1F
+```
+
+### 8. startswith() e endswith(): Verificam se a string começa ou termina com uma substring.
+
+```python
+frase = "Python é incrível!"
+comeca_com_python = frase.startswith("Python")
+termina_com_incrivel = frase.endswith("incrível!")
+print("Começa com 'Python'?", comeca_com_python) # Começa com 'Python'? True
+print("Termina com 'incrível!'?", termina_com_incrivel) # Termina com 'incrível!'? True
+```
+
+## Formatação de Strings
+
+Python oferece várias maneiras de formatar strings.
+
+### 1. Usando f-strings (recomendado a partir do Python 3.6)
+
+```python
+nome = "Alice"
+idade = 25
+mensagem = f"{nome} tem {idade} anos."
+print(mensagem) # Alice tem 25 anos.
+```
+
+### 2. Usando o método format()
+
+```python
+nome = "Alice"
+idade = 25
+mensagem = "{} tem {} anos.".format(nome, idade)
+print(mensagem) # Alice tem 25 anos.
+```
+
+### 3. Usando o operador % (estilo antigo)
+
+```python
+nome = "Alice"
+idade = 25
+mensagem = "%s tem %d anos." % (nome, idade)
+print(mensagem) # Alice tem 25 anos.
+```
+
+## Strings Multilinha
+
+Você pode criar strings que ocupam várias linhas usando três aspas (simples ou duplas).
+
+```python
+poema = """Rosas são vermelhas,
+Violetas são azuis,
+Python é incrível,
+E você também!"""
+print("Poema:\n", poema)
+
+"""Poema:
+ Rosas são vermelhas,
+Violetas são azuis,
+Python é incrível,
+E você também!"""
+```
+
+## Verificação de Caracteres
+
+Você pode verificar se uma string contém apenas letras, números, etc.
+
+```python
+nome = "Alice"
+print("'Alice' é alfabético?", nome.isalpha()) # 'Alice' é alfabético? True
+print("'123' é numérico?", "123".isnumeric()) # '123' é numérico? True
+print("'Python3' é alfanumérico?", "Python3".isalnum()) # 'Python3' é alfanumérico? True
 ```
 
 ---
