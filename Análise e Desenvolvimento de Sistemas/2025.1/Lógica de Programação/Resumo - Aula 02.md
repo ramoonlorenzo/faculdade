@@ -536,3 +536,55 @@ print("Lista de quadrados de 0 a 9:", quadrados) # Lista de quadrados de 0 a 9: 
 ```
 
 ---
+
+# Estrutura de Decisão (if, elif e else)
+
+## Par ou Ímpar
+
+```python
+# Solicita ao usuário que insira um número
+numero = int(input("Digite um número: "))
+
+# Verifica se o número é par ou ímpar
+if numero % 2 == 0:
+print(f"O número {numero} é par.")
+else:
+print(f"O número {numero} é ímpar.")
+```
+
+## Maior idade
+
+```python
+# Solicita ao usuário que insira a idade
+idade = int(input("Digite sua idade: "))
+
+# Verifica se é maior ou menor de idade
+if idade >= 18:
+print("Você é maior de idade.")
+else:
+print("Você é menor de idade.")
+```
+
+## Calculadora Simples
+
+```python
+# Solicita ao usuário dois números e a operação
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+operacao = input("Escolha a operação (+, -, *, /): ")
+
+# Verifica qual operação o usuário deseja realizar
+if operacao == "+":
+    print(f"O resultado da soma é: {numero1 + numero2}")
+elif operacao == "-":
+    print(f"O resultado da subtração é: {numero1 - numero2}")
+elif operacao == "*":
+    print(f"O resultado da multiplicação é: {numero1 * numero2}")
+elif operacao == "/":
+    if numero2 != 0:
+        print(f"O resultado da divisão é: {numero1 / numero2}")
+    else:
+        print("Não é possível dividir por zero.")
+else:
+    print("Operação inválida.")
+```
