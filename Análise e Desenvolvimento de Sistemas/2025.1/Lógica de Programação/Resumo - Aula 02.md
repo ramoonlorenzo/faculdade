@@ -344,3 +344,195 @@ print("'Python3' é alfanumérico?", "Python3".isalnum()) # 'Python3' é alfanum
 ```
 
 ---
+
+# Operações com listas
+
+## Criação de listas
+
+```python
+numeros = [1, 2, 3, 4, 5]
+frutas = ["maçã", "banana", "laranja"]
+misturada = [1, "texto", 3.14, True]
+```
+
+## Exibindo listas
+
+```python
+numeros = [1, 2, 3, 4, 5]
+frutas = ["maçã", "banana", "laranja"]
+misturada = [1, "texto", 3.14, True]
+print("Lista de números:", numeros) # Lista de números: 1, 2, 3, 4, 5
+print("Lista de frutas:", frutas) # Lista de frutas: maçã, banana, laranja
+print("Lista misturada:", misturada) # Lista misturada: 1, texto, 3.14, True
+```
+
+## Acessando Elementos de uma Lista
+
+Em Python, listas são indexadas, o que significa que você pode acessar elementos individuais usando índices.
+
+```python
+numeros = [1, 2, 3, 4, 5]
+primeiro_elemento = numeros[0]
+ultimo_elemento = numeros[-1]
+print("Primeiro elemento da lista de números:", primeiro_elemento) # Primeiro elemento da lista de números: 1
+print("Último elemento da lista de números:", ultimo_elemento) # Último elemento da lista de números: 5
+```
+
+## Fatiamento de Listas (Slicing)
+
+\
+Você pode extrair partes de uma lista usando o fatiamento.
+
+```python
+numeros = [1, 2, 3, 4, 5]
+parte_da_lista = numeros[1:4] # Extrai os elementos do índice 1 ao 3
+print("Parte da lista de números:", parte_da_lista) # Parte da lista de números: [2, 3, 4]
+```
+
+## Modificando Elementos de uma Lista
+
+Listas são mutáveis, o que significa que você pode alterar seus elementos.
+
+```python
+numeros = [1, 2, 3, 4, 5]
+numeros[0] = 10
+print("Lista de números após modificar o primeiro elemento:", numeros) # Lista de números após modificar o primeiro elemento: [10, 2, 3, 4, 5]
+```
+
+## Adicionando Elementos a uma Lista
+
+Você pode adicionar elementos ao final de uma lista usando o método append().
+
+```python
+numeros = [1, 2, 3, 4, 5]
+numeros.append(6)
+print("Lista de números após adicionar um elemento:", numeros) # Lista de números após adicionar um elemento: [1, 2, 3, 4, 5, 6]
+```
+
+## Adicionando Elementos em uma Posição Específica
+
+Use o método insert() para adicionar um elemento em uma posição específica.
+
+```python
+numeros = [1, 2, 3, 4, 5]
+numeros.insert(2, 7) # Insere o número 7 no índice 2
+print("Lista de números após inserir um elemento:", numeros) # Lista de números após inserir um elemento: [1, 2, 7, 3, 4, 5]
+```
+
+## Removendo Elementos de uma Lista
+
+Você pode remover elementos de uma lista de várias maneiras.
+
+### 1. Usando o método remove(): Remove o primeiro elemento com o valor especificado.
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+numeros.remove(7)
+print("Lista de números após remover o número 7:", numeros) # Lista de números após remover o número 7: [1, 2, 3, 4, 5]
+```
+
+### 2. Usando o método pop(): Remove o elemento em um índice específico e o retorna.
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+elemento_removido = numeros.pop(1) # Remove o elemento no índice 1
+print("Elemento removido:", elemento_removido) # Elemento removido: 2
+print("Lista de números após remover o elemento no índice 1:", numeros) # Lista de números após remover o elemento no índice 1: [1, 7, 3, 4, 5]
+```
+
+### 3. Usando a palavra-chave del: Remove o elemento em um índice específico.
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+del numeros[2] # Remove o elemento no índice 2
+print("Lista de números após remover o elemento no índice 2:", numeros) # Lista de números após remover o elemento no índice 2: [1, 2, 3, 4, 5]
+```
+
+## Comprimento de uma Lista
+
+Use a função len() para obter o número de elementos em uma lista.
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+tamanho_lista = len(numeros)
+print("Tamanho da lista de números:", tamanho_lista) # Tamanho da lista de números: 6
+```
+
+## Ordenando Listas
+
+Você pode ordenar uma lista em ordem crescente ou decrescente.
+
+### Ordenação crescente
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+numeros.sort()
+print("Lista de números ordenada em ordem crescente:", numeros) # Lista de números ordenada em ordem crescente: [1, 2, 3, 4, 5, 7]
+```
+
+### Ordenação decrescente
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+numeros.sort(reverse=True)
+print("Lista de números ordenada em ordem decrescente:", numeros) # Lista de números ordenada em ordem decrescente: [7, 5, 4, 3, 2, 1]
+```
+
+### Invertendo a Ordem de uma Lista
+
+Use o método reverse() para inverter a ordem dos elementos em uma lista.
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+numeros.reverse()
+print("Lista de números invertida:", numeros) # Lista de números invertida: [5, 4, 3, 7, 2, 1]
+```
+
+## Copiando Listas
+
+Cuidado ao copiar listas, pois a atribuição direta cria uma referência, não uma cópia.
+
+### Cópia superficial (shallow copy)
+
+```python
+numeros = [1, 2, 7, 3, 4, 5]
+copia_numeros = numeros.copy()
+print("Cópia da lista de números:", copia_numeros) # Cópia da lista de números: [1, 2, 7, 3, 4, 5]
+```
+
+### Cópia profunda (deep copy) - útil para listas que contêm outras listas
+
+```python
+import copy
+lista_aninhada = [[1, 2], [3, 4]]
+copia_profunda = copy.deepcopy(lista_aninhada)
+print("Cópia profunda da lista aninhada:", copia_profunda) # Cópia profunda da lista aninhada: [[1, 2], [3, 4]]
+```
+
+## Listas Aninhadas
+
+Listas podem conter outras listas, criando estruturas multidimensionais.
+
+```python
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("Matriz 3x3:", matriz) # Matriz 3x3: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
+
+### Acessando elementos em listas aninhadas
+
+```python
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+elemento_matriz = matriz[1][2] # Acessa o elemento na linha 1, coluna 2
+print("Elemento na linha 1, coluna 2 da matriz:", elemento_matriz) # Elemento na linha 1, coluna 2 da matriz: 6
+```
+
+## List Comprehensions
+
+Uma maneira concisa de criar listas.
+
+```python
+quadrados = [x**2 for x in range(10)]
+print("Lista de quadrados de 0 a 9:", quadrados) # Lista de quadrados de 0 a 9: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+---
