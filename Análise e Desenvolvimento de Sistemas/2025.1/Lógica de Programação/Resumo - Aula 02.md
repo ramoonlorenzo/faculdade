@@ -71,6 +71,8 @@ print(f"Potenciação: {a} ** 2 = {potencia}") # 100
 ### Raiz quadrada
 
 ```python
+import math
+
 a = 10 # int
 raiz_quadrada = math.sqrt(a)
 print(f"Raiz quadrada de {a} = {raiz_quadrada}") # 3.1622776601683795
@@ -79,6 +81,8 @@ print(f"Raiz quadrada de {a} = {raiz_quadrada}") # 3.1622776601683795
 ### Logaritmo natural (base e)
 
 ```python
+import math
+
 a = 10 # int
 logaritmo_natural = math.log(a)
 print(f"Logaritmo natural de {a} = {logaritmo_natural}") # 2.302585092994046
@@ -87,6 +91,8 @@ print(f"Logaritmo natural de {a} = {logaritmo_natural}") # 2.302585092994046
 ### Logaritmo na base 10
 
 ```python
+import math
+
 a = 10 # int
 logaritmo_base10 = math.log10(a)
 print(f"Logaritmo na base 10 de {a} = {logaritmo_base10}") # 1.0
@@ -95,6 +101,8 @@ print(f"Logaritmo na base 10 de {a} = {logaritmo_base10}") # 1.0
 ### Seno, Cosseno e Tangente (ângulo em radianos)
 
 ```python
+import math
+
 angulo_radianos = math.radians(45) # Converte 45 graus para radianos
 seno = math.sin(angulo_radianos)
 cosseno = math.cos(angulo_radianos)
@@ -123,6 +131,8 @@ print(f"Valor absoluto de {valor_negativo} = {absoluto}") # 10
 ### Fatorial
 
 ```python
+import math
+
 fatorial = math.factorial(5)
 print(f"Fatorial de 5 = {fatorial}") # 120
 ```
@@ -130,6 +140,8 @@ print(f"Fatorial de 5 = {fatorial}") # 120
 ### Constantes matemáticas
 
 ```python
+import math
+
 print(f"Valor de pi: {math.pi}") # 3.141592653589793
 print(f"Valor de e: {math.e}") # 2.718281828459045
 ```
@@ -215,7 +227,9 @@ print("Tamanho do nome 'Alice':", tamanho_nome) # Tamanho do nome 'Alice': 5
 
 Strings em Python têm vários métodos úteis para manipulação.
 
-### 1. lower() e upper(): Convertem a string para minúsculas ou maiúsculas.
+### lower() e upper()
+
+Convertem a string para minúsculas ou maiúsculas.
 
 ```python
 nome = "Alice"
@@ -225,7 +239,9 @@ print("Nome em minúsculas:", minusculas) # Nome em minúsculas: alice
 print("Nome em maiúsculas:", maiusculas) # Nome em maiúsculas: ALICE
 ```
 
-### 2. strip(): Remove espaços em branco no início e no final da string.
+### strip()
+
+Remove espaços em branco no início e no final da string.
 
 ```python
 texto_com_espacos = " Olá, mundo! "
@@ -233,7 +249,9 @@ texto_sem_espacos = texto_com_espacos.strip()
 print("Texto sem espaços:", texto_sem_espacos) # Texto sem espaços: Olá, mundo!
 ```
 
-### 3. replace(): Substitui uma parte da string por outra.
+### replace()
+
+Substitui uma parte da string por outra.
 
 ```python
 frase = "Python é incrível!"
@@ -241,7 +259,9 @@ nova_frase = frase.replace("incrível", "fantástico")
 print("Frase modificada:", nova_frase) # Frase modificada: Python é fantástico!
 ```
 
-### 4. split(): Divide a string em uma lista de substrings com base em um separador.
+### split()
+
+Divide a string em uma lista de substrings com base em um separador.
 
 ```python
 frase = "Python é incrível!"
@@ -249,7 +269,9 @@ palavras = frase.split(" ")
 print("Palavras da frase:", palavras) # Palavras da frase: ['Python', 'é', 'incrível!']
 ```
 
-### 5. join(): Junta elementos de uma lista em uma única string, usando um separador.
+### join()
+
+Junta elementos de uma lista em uma única string, usando um separador.
 
 ```python
 palavras = ["Python", "é", "incrível!"]
@@ -257,7 +279,9 @@ frase_reunida = " ".join(palavras)
 print("Frase reunida:", frase_reunida) # Frase reunida: Python é incrível!
 ```
 
-### 6. find(): Procura por uma substring e retorna o índice da primeira ocorrência.
+### find()
+
+Procura por uma substring e retorna o índice da primeira ocorrência.
 
 ```python
 frase = "Python é incrível!"
@@ -265,7 +289,9 @@ indice = frase.find("incrível")
 print("Índice de 'incrível':", indice) # Índice de 'incrível': 9
 ```
 
-### 7. count(): Conta quantas vezes uma substring aparece na string.
+### count()
+
+Conta quantas vezes uma substring aparece na string.
 
 ```python
 frase = "Python é incrível!"
@@ -273,7 +299,9 @@ contagem = frase.count("é")
 print("Quantidade de 'é' na frase:", contagem) # Quantidade de 'é' na frase: 1F
 ```
 
-### 8. startswith() e endswith(): Verificam se a string começa ou termina com uma substring.
+### startswith() e endswith()
+
+Verificam se a string começa ou termina com uma substring.
 
 ```python
 frase = "Python é incrível!"
@@ -287,7 +315,7 @@ print("Termina com 'incrível!'?", termina_com_incrivel) # Termina com 'incríve
 
 Python oferece várias maneiras de formatar strings.
 
-### 1. Usando f-strings (recomendado a partir do Python 3.6)
+### Usando f-strings (recomendado a partir do Python 3.6)
 
 ```python
 nome = "Alice"
@@ -296,7 +324,7 @@ mensagem = f"{nome} tem {idade} anos."
 print(mensagem) # Alice tem 25 anos.
 ```
 
-### 2. Usando o método format()
+### Usando o método format()
 
 ```python
 nome = "Alice"
@@ -305,7 +333,7 @@ mensagem = "{} tem {} anos.".format(nome, idade)
 print(mensagem) # Alice tem 25 anos.
 ```
 
-### 3. Usando o operador % (estilo antigo)
+### Usando o operador % (estilo antigo)
 
 ```python
 nome = "Alice"
@@ -380,7 +408,6 @@ print("Último elemento da lista de números:", ultimo_elemento) # Último eleme
 
 ## Fatiamento de Listas (Slicing)
 
-\
 Você pode extrair partes de uma lista usando o fatiamento.
 
 ```python
@@ -423,7 +450,9 @@ print("Lista de números após inserir um elemento:", numeros) # Lista de númer
 
 Você pode remover elementos de uma lista de várias maneiras.
 
-### 1. Usando o método remove(): Remove o primeiro elemento com o valor especificado.
+### remove()
+
+Remove o primeiro elemento com o valor especificado.
 
 ```python
 numeros = [1, 2, 7, 3, 4, 5]
@@ -431,7 +460,9 @@ numeros.remove(7)
 print("Lista de números após remover o número 7:", numeros) # Lista de números após remover o número 7: [1, 2, 3, 4, 5]
 ```
 
-### 2. Usando o método pop(): Remove o elemento em um índice específico e o retorna.
+### pop()
+
+Remove o elemento em um índice específico e o retorna.
 
 ```python
 numeros = [1, 2, 7, 3, 4, 5]
@@ -440,7 +471,9 @@ print("Elemento removido:", elemento_removido) # Elemento removido: 2
 print("Lista de números após remover o elemento no índice 1:", numeros) # Lista de números após remover o elemento no índice 1: [1, 7, 3, 4, 5]
 ```
 
-### 3. Usando a palavra-chave del: Remove o elemento em um índice específico.
+### Usando a palavra-chave del
+
+Remove o elemento em um índice específico.
 
 ```python
 numeros = [1, 2, 7, 3, 4, 5]
@@ -448,7 +481,9 @@ del numeros[2] # Remove o elemento no índice 2
 print("Lista de números após remover o elemento no índice 2:", numeros) # Lista de números após remover o elemento no índice 2: [1, 2, 3, 4, 5]
 ```
 
-## Comprimento de uma Lista
+## Listas
+
+### Comprimento de uma Lista
 
 Use a função len() para obter o número de elementos em uma lista.
 
@@ -458,11 +493,11 @@ tamanho_lista = len(numeros)
 print("Tamanho da lista de números:", tamanho_lista) # Tamanho da lista de números: 6
 ```
 
-## Ordenando Listas
+### Ordenando Listas
 
 Você pode ordenar uma lista em ordem crescente ou decrescente.
 
-### Ordenação crescente
+#### Ordenação crescente
 
 ```python
 numeros = [1, 2, 7, 3, 4, 5]
@@ -470,7 +505,7 @@ numeros.sort()
 print("Lista de números ordenada em ordem crescente:", numeros) # Lista de números ordenada em ordem crescente: [1, 2, 3, 4, 5, 7]
 ```
 
-### Ordenação decrescente
+#### Ordenação decrescente
 
 ```python
 numeros = [1, 2, 7, 3, 4, 5]
@@ -478,7 +513,7 @@ numeros.sort(reverse=True)
 print("Lista de números ordenada em ordem decrescente:", numeros) # Lista de números ordenada em ordem decrescente: [7, 5, 4, 3, 2, 1]
 ```
 
-### Invertendo a Ordem de uma Lista
+#### Invertendo a Ordem de uma Lista
 
 Use o método reverse() para inverter a ordem dos elementos em uma lista.
 
@@ -491,6 +526,32 @@ print("Lista de números invertida:", numeros) # Lista de números invertida: [5
 ## Copiando Listas
 
 Cuidado ao copiar listas, pois a atribuição direta cria uma referência, não uma cópia.
+
+**Exemplo:**
+
+**Cópia Falsa**
+
+```python
+lista1 = [1, 2, 3]
+lista2 = lista1  # lista2 agora é uma referência para lista1
+
+lista2.append(4)
+
+print(lista1)  # [1, 2, 3, 4]
+print(lista2)  # [1, 2, 3, 4]
+```
+
+**Cópia Verdadeira**
+
+```python
+lista1 = [1, 2, 3]
+lista2 = lista1[:]  # Agora lista2 é uma cópia
+
+lista2.append(4)
+
+print(lista1)  # [1, 2, 3]
+print(lista2)  # [1, 2, 3, 4]
+```
 
 ### Cópia superficial (shallow copy)
 
@@ -526,7 +587,7 @@ elemento_matriz = matriz[1][2] # Acessa o elemento na linha 1, coluna 2
 print("Elemento na linha 1, coluna 2 da matriz:", elemento_matriz) # Elemento na linha 1, coluna 2 da matriz: 6
 ```
 
-## List Comprehensions
+### List Comprehensions
 
 Uma maneira concisa de criar listas.
 
@@ -547,9 +608,9 @@ numero = int(input("Digite um número: "))
 
 # Verifica se o número é par ou ímpar
 if numero % 2 == 0:
-print(f"O número {numero} é par.")
+    print(f"O número {numero} é par.")
 else:
-print(f"O número {numero} é ímpar.")
+    print(f"O número {numero} é ímpar.")
 ```
 
 ## Maior idade
@@ -560,9 +621,9 @@ idade = int(input("Digite sua idade: "))
 
 # Verifica se é maior ou menor de idade
 if idade >= 18:
-print("Você é maior de idade.")
+    print("Você é maior de idade.")
 else:
-print("Você é menor de idade.")
+    print("Você é menor de idade.")
 ```
 
 ## Calculadora Simples
